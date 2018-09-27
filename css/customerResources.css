@@ -1,0 +1,146 @@
+body {
+	background-color: #323232;
+}
+
+h1 {
+	color: white;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+.blog-wrapper {
+	margin-top: 40px;
+}
+
+.row {
+	width: 80%;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: var(--box-shadow);
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.left1 { /*  Side with Mockups */
+	flex-basis: 40%;
+
+}
+
+.right1 {
+	flex-basis: 60%;
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.left2 {
+	flex-basis: 60%;
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+
+}
+.right2 { /*  Side with Mockups */
+	flex-basis: 40%;
+
+}
+
+h3 {
+	font-size: 2rem;
+	margin-top: 0;
+	color: var(--bswd-blue);
+	font-weight: 400;
+}
+
+.readMore {
+	color: var(--bswd-blue);
+}
+
+.button {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 0;
+	margin-left: auto;
+}
+
+/* ===== Blog background Images ===== */
+
+#wordPressTerms {
+	background-image: url("../assets/images/wordpress-screen.jpg");
+	background-size: cover;
+}
+
+#hosting {
+	background-image: url("../assets/images/data-center.jpg");
+	background-size: cover;
+}
+
+#wpSecure {
+	background-image: url("../assets/images/secure.jpg");
+	background-size: cover;
+}
+
+
+
+
+/* ===== Footer ===== */
+
+.more {
+	background-color: var(--bswd-blue);
+	padding: 20px;
+	text-align: center;
+}
+
+.more > p {
+	color: #323232;
+	font-size: 1.25rem;
+}
+
+.more > p > a {
+	color: #fff;
+	font-size: 1.25rem;
+}
+
+@media (max-width: 1080px) {
+	.row {
+		flex-direction: column;
+	}
+
+	.row:nth-child(even) {
+		flex-direction: column-reverse;
+	}
+
+	.left1, .right2 {
+		height: 450px;
+	}
+
+	.title {
+		text-align: center;
+	}
+
+	.row div p {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+@media (max-width: 750px) {
+	h1 {
+		font-size: 2.5rem;
+		font-weight: 400;
+	}
+
+	.left1, .right2 {
+		height: 350px;
+	}
+}
+
+@media (max-width: 500px) {
+	.left1, .right2 {
+		height: 250px;
+	}	
+}
